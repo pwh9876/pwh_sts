@@ -9,10 +9,14 @@
   ● jdk 1.8  
 
 ## 문제해결 방법 
-  - 제공된 데이터는 DB 테이블에 인서트 되어있다는 가정하에 PC에 마리아DB를 설치하여   
-    제공된 CSV파일 import하여 3개 파일에 맞는 3개 테이블의 데이터를 세팅하였습니다.
+  ● 데이터는 DB 테이블에 인서트 되어있다는 가정하에 마리아DB를 설치하여  
+    CSV파일 import하여 3개 테이블의 데이터를 세팅.  
+    
+  ● MariaDB와 mybatis를 활용하여 각각의 API기능에 대해서는 SQL쿼리를 통해 결과값을 도출.   
   
-  ● application.properties 파일에서 DB 접속 정보 설정 가능  
+  ● 쿼리를 통해 도출된 값은 API 호출을 통해 JSON형식으로 화면 출력(HTTP Method는 GET방식 선택).  
+  
+  ● application.properties 파일에서 DB 접속 정보 설정 가능.  
   
   ● 테이블 구성현황  
     고객 거래내역 데이터 - TS_TBL_TRD  
